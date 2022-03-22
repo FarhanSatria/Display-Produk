@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan Satria Nugraha | 6706213008 | Display Produk</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Arial", sans-serif;
+        }
+
+        .header {
+            background-color: #0E3EDA;
+            color: white;
+            padding: 15px;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #F473B9;
+        }
+
+        .menu li:hover {
+            background-color: #FFBDE6;
+        }
+
+        .aside {
+            background-color: #FFDDEE;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0,12), 0 1px 2px rgba(0,0,0,0,24);
+        }
+
+        .footer {
+            background-color: #F473B9;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+        
+        /* For desktop */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Display Produk Makanan</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li> <a href="NasiGoreng.html" style="text-decoration: none;">Nasi Goreng</a></li>
+                <li> <a href="NasiPadang.html" style="text-decoration: none;">Nasi Padang</a></li>
+                <li><a href="NasiKucing.html" style="text-decoration: none;">Nasi Kucing</a></li>
+                <li><a href="NasiUduk.html" style="text-decoration: none;">Nasi Uduk</a></li>
+                <li><a href="NasiKuning.html" style="text-decoration: none;">Nasi Kuning</a></li>
+            </ul>
+        </div>
+        
+        <div class="col-6">
+            <h1>Nasi Goreng</h1>
+            <div class="col-12">
+                <img src="nasigoreng.jpg" alt="Nasi Goreng" width="500px">
+            </div>
+            <p>Nasi goreng merupakan sajian nasi yang digoreng dalam sebuah wajan atau penggorengan menghasilkan cita rasa berbeda karena dicampur dengan bumbu-bumbu seperti garam, bawang putih, bawang merah, merica dan kecap manis. Selain itu, ditambahkan bahan-bahan pelengkap seperti telur, sayur-sayuran, makanan laut, atau daging.</p>
+        </div>
+
+        <div class="col-3">
+            <div class="aside">
+                <h2>Asal</h2>
+                <p>Indonesia</p>
+                <h2>Kalori</h2>
+                <p>163 Kalori</p>
+                <h2>Harga</h2>
+                <p>Rp. 15000</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Farhan Satria Nugraha | 6706213008 | Tugas Pemrograman Berbasis Web 1 | Display Produk</p>
+    </div>
+</body>
+</html>
